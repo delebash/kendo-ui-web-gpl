@@ -1,0 +1,227 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Changelog for Kendo UI v2014.1.318</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font: .75em/1.5 Tahoma, sans-serif;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            font-size: normal;
+        }
+
+        h2 {
+            font-size: 2em;
+            font-weight: normal;
+
+            margin: 1.2em 0 .3em;
+            padding-bottom: .2em;
+        }
+
+        #page {
+            width: 50em;
+            margin: 0 auto 2em;
+            border-radius: 0 0 1em 1em;
+            box-shadow: 0 0 10px #ccc;
+            padding: 1em 2em 2em;
+        }
+
+        .poBoxIcon {
+            float: left;
+            font-size: 2em;
+            margin: 1.2em .5em 0 0;
+        }
+
+        .poTopLine {
+            border-top: 2px solid #e1e1e1;
+            margin: 17px 0 40px 0;
+        }
+    </style>
+
+    <base href="http://www.telerik.com/support/whats-new/kendo-ui-web/release-history">
+</head>
+<body>
+    <div id="page">
+        <h1 class="title">Release notes for Kendo UI v2014.1.318</h1>
+
+        <h1>Framework</h1>
+        <div class="tClear poTopLine">
+            <div class="poBoxIconText">
+                <p><strong>What's new</strong></p><ul><li>Wrong border radius applied on pickers in RTL mode</li><li>Research on Oracle ADF</li><li>NumericTextBox decimals erratic rounding</li></ul>
+                <p><strong>What's fixed</strong></p><ul><li>Bundles produced by the Custom Download Builder can't be loaded with RequireJS</li><li>Tile effect does not behave as expected in Firefox</li></ul>
+            </div>
+        </div>
+
+
+        <div class="tClear poTopLine">
+            <h2>DataSource</h2>
+            <p><strong>What's new</strong></p><ul><li>Reverting changes when data is set via the data method should not remove the records</li></ul>
+            <p><strong>What's fixed</strong></p><ul><li>Unstable sorting in IE9+ browsers</li><li>Grid cannot display data when a "data" property exists in DataSource/Observable</li><li>Total is not correct if all records are deleted and DataSource is synced</li><li>Min, max, sum and average aggregates should return null if data contains only nulls</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Draggable</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>TypeScript declaration of destroyGroups is an instance method rather than static one</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>DropDownList</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>Adding Bootstrap to the project breaks the Kendo UI DropDown keyboard navigation</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Globalization</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>Dates before 1970 in the Microsoft JSON date format are not parsed correctly</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Grid</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>Grid cannot display data when a "data" property exists in DataSource/Observable</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>MVVM</h2>
+            <p><strong>What's new</strong></p><ul><li>Support setters for dependent properties</li></ul>
+            <p><strong>What's fixed</strong></p><ul><li>Source binding with observable object breaks parent hierarchy</li><li>Memory leak in MVVM with jQuery 2.0</li><li>Source binding destroy method unbinds all change handlers from the source</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Router</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>In Firefox, urlencoded parts of the hash are incorrectly decoded</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>SPA</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>In Firefox, urlencoded parts of the hash are incorrectly decoded</li></ul>
+        </div>
+        <h1>Web</h1>
+        <div class="tClear poTopLine">
+            <div class="poBoxIconText">
+                
+                <p><strong>What's fixed</strong></p><ul><li>Popup with screen boundary detected flips misplaced with the scrollbar size</li><li>Middle mouse click is handled incorrectly in user events</li></ul>
+            </div>
+        </div>
+
+
+        <div class="tClear poTopLine">
+            <h2>ComboBox</h2>
+            <p><strong>What's new</strong></p><ul><li>Modifications made in dataBound event handler are not applied if the widget cascades</li></ul>
+            <p><strong>What's fixed</strong></p><ul><li>Widget does not raise cascade event if has initial value and autoBind false</li><li>Widget throws error on blur when value is null</li><li>ComboBox value is overridden with the initial one, when the data is refreshed and the current value evaluates to false.</li><li>Widget should not select first item on Enter when popup is closed</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>DataSource</h2>
+            <p><strong>What's new</strong></p><ul><li>WebApi support in the DataSource</li></ul>
+            
+        </div>
+        <div class="tClear poTopLine">
+            <h2>DatePicker</h2>
+            <p><strong>What's new</strong></p><ul><li>Support min and max values as HTML attributes</li></ul>
+            
+        </div>
+        <div class="tClear poTopLine">
+            <h2>DateTimePicker</h2>
+            <p><strong>What's new</strong></p><ul><li>Support min and max values as HTML attributes</li></ul>
+            
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Draggable</h2>
+            <p><strong>What's new</strong></p><ul><li>ignore configuration option for draggable</li></ul>
+            
+        </div>
+        <div class="tClear poTopLine">
+            <h2>DropDownList</h2>
+            <p><strong>What's new</strong></p><ul><li>Modifications made in dataBound event handler are not applied if the widget cascades</li></ul>
+            <p><strong>What's fixed</strong></p><ul><li>Widget does not raise cascade event if has initial value and autoBind false</li><li>Widget throws an error when select an item several Enter presses</li><li>Selected item is shown as "undefined" if dataValueField is named "data" </li><li>DropDownList does not support "[None]" as placeholder</li><li>Using DataBound of Cascading DropDownList does not allow you to set value or select item</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Editor</h2>
+            <p><strong>What's new</strong></p><ul><li>Table editing now behaves more like MS Word</li><li>Add width and height fields to the Editor's InsertImage tool</li></ul>
+            <p><strong>What's fixed</strong></p><ul><li>Double clicking on ImageBrowser's new folder input element does not navigate to the appropriate folder</li><li>JS error when going to new paragraph from end of heading</li><li>Empty cells are removed when pasting from MS Excel</li><li>Valid empty paragraphs are stripped when pasting from Word.</li><li>Applying block styles within table cells ignores formatting tag</li><li>System elements are not removed from content when initializing widget</li><li>Characters typed through an IME are not considered text</li><li>Row delete when cursor placed in last row of a table causes the editor to freeze in IE10</li><li>When table is copied from MS Word into Editor, the text color is omitted</li><li>Table size could not be set with keyboard</li><li>Pasting sub/super scripted text from word to Kendo UI Editor in IE8 does not behave as expected</li><li>Adding &lt;p&gt;&lt;br&gt;&lt;/p&gt; in the Kendo UI Editor causes "Unknown runtime error" in IE8</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Grid</h2>
+            <p><strong>What's new</strong></p><ul><li>Support setting the delete confirmation text via function</li></ul>
+            <p><strong>What's fixed</strong></p><ul><li>Pager buttons do not support numbers of 4 digits or more</li><li>Unable to enter edit mode after deleting record which has fail validation and remove event is canceled</li><li>When column filter is set the grid does not calculate height correctly</li><li>Binding to Everlive: Visualization issue on iPad</li><li>Input is not validated on change if the data-bind attribute contains other bindings besides value</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>ListView</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>Input is not validated on change if the data-bind attribute contains other bindings besides value</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>MVVM</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>Exception is thrown when binding events to a grouped data from dataSource</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>MaskedTextBox</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>Custom defined rules extends widget's default rules globally</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Menu</h2>
+            <p><strong>What's new</strong></p><ul><li>Adding an already added TabStrip tab should instead move it according to the method used</li></ul>
+            <p><strong>What's fixed</strong></p><ul><li>Menu with openOnClick doesn't open items with templates. </li><li>Sub menu with scrolling is higher than the window</li><li>Menu with scrolling closes immediately after opening the first time</li><li>Sub menu items are cannot be opened when openOnClick is enabled in IE 11</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>MultiSelect</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>Initial value is not set when the first value is an empty string</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>NumericTextBox</h2>
+            <p><strong>What's new</strong></p><ul><li>Widget replaces numpad decimal point depending on the used culture settings</li><li>Disabled widget should not try to select text</li></ul>
+            
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Pager</h2>
+            <p><strong>What's new</strong></p><ul><li>Improve Pager CSS performance by using faster selectors</li></ul>
+            
+        </div>
+        <div class="tClear poTopLine">
+            <h2>PanelBar</h2>
+            <p><strong>What's new</strong></p><ul><li>Adding an already added TabStrip tab should instead move it according to the method used</li></ul>
+            
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Scheduler</h2>
+            <p><strong>What's new</strong></p><ul><li>Pass a group index parameter to slot template functions</li><li>Improve positioning of multiple events in single month view slot</li><li>Add support for hourly frequency option in the RecurrenceEditor widget</li></ul>
+            <p><strong>What's fixed</strong></p><ul><li>Event is not position correctly in month view if dayTemplate starts with a text node</li><li>Event shown only in last Friday of a month is render in the next one</li><li>Yearly recurring event with WKST=MO and BYDAY=-1SU rules is not expanded correctly</li><li>Scheduler allows to move event even when the view disables editing</li><li>Widget offsets incorrectly dates in DST</li><li>All business items are selected, when prior to filtering(by business hours) and item outside of these time interval is selected</li><li>Widget fails to expand an event with a DAILY recurrence starting in a day with a DST change</li><li>MonthView is not rendering correctly when they start in one week and ends on next one</li><li>Scheduler toolbar phone styles applied incorrectly to tablets as well</li><li>Selected state is not visible for "today" cells and rows</li><li>Fix typo in the name of the work week view</li><li>Mobile recurrence editor throws exception when edit monthly frequency</li><li>eventResources method returns the resources without field name</li><li>Error is thrown when navigating between views with different number of resource groups</li><li>Scheduler recurring event occurences are rendered incorrectly when model Id is string</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Slider</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>tooltip value is not formatted by default</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>TabStrip</h2>
+            <p><strong>What's new</strong></p><ul><li>Adding an already added TabStrip tab should instead move it according to the method used</li></ul>
+            <p><strong>What's fixed</strong></p><ul><li>Loader state is not cleaned on Ajax load abort</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>TimePicker</h2>
+            <p><strong>What's new</strong></p><ul><li>Support min and max values as HTML attributes</li></ul>
+            
+        </div>
+        <div class="tClear poTopLine">
+            <h2>TreeView</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>CheckChildren initially checks the HTML node of the parent (based on the children), but does not update the dataitem</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Window</h2>
+            
+            <p><strong>What's fixed</strong></p><ul><li>DOM nodes leak after destroying widget</li></ul>
+        </div>
+    </div>
+</body>
+</html>
